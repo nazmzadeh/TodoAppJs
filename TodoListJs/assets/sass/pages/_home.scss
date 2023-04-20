@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $main_background_color;
+}
+.container {
+  padding: 40px;
+  max-width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  h1 {
+    font-size: 45px;
+    color: $main_color;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: $main_color;
+    box-shadow: $box-shadow;
+    border-radius: 7px;
+
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 0px 15px;
+      background-color: $inp_background;
+      border: 0;
+    }
+    button {
+      width: 100px;
+      height: 55px;
+      margin: 0 auto;
+      background-color: $btn_color;
+      color: $main_color;
+      border: 0;
+      cursor: pointer;
+      box-shadow: $box-shadow;
+      padding: 10px 18px;
+      margin-top: 20px;
+      border-radius: 7px;
+      &:hover,&:focus {
+        background-color: $btn_hover;
+      }
+    }
+}
+    ul {
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 25px;
+      li {
+        width: 70%;
+        margin: 0 auto;
+        min-height: 44px;
+        list-style: none;
+        background-color: $main_color;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        padding: 10px 15px;
+        box-shadow: $box-shadow;
+        border-radius: 7px;
+        i {
+          font-size: 28px;
+          color: $btn_color;
+          cursor: pointer;
+        }
+        
+      }
+      .done{
+        #check{
+            color: $done_color;
+        }
+        span{
+            text-decoration: line-through;
+
+        }
+    }
+    }
+  
+}
+
+
+@media only screen and (min-width:375px) and (max-width:667px) {
+    .container{
+        h1{
+            font-size: 38px;
+        }
+        form{
+            input{
+                font-size: 15px;
+            }
+            button{
+                width: 90px;
+                height: 50px;
+            }
+        }
+        ul{
+            li{
+                span{
+                    font-size: 19px;
+                }
+            }
+        }
+        
+    }
+}
